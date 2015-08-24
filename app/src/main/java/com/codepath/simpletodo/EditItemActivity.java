@@ -1,5 +1,7 @@
 package com.codepath.simpletodo;
 
+// Learning for codepath submittal
+
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
