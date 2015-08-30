@@ -2,10 +2,13 @@ package com.codepath.simpletodo;
 
 // Learning for codepath submittal
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class EditItemActivity extends AppCompatActivity {
 
@@ -35,6 +38,17 @@ public class EditItemActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void printStarter(EditText view) {
+        TextView myText = (TextView) findViewById(R.id.btnAddItem);
+        myText.setText("Your Text here");
+
+        Button button = (Button)findViewById(R.id.btnAddItem);
+        button.setText("Click Me !");
+
+
+
     }
 
 

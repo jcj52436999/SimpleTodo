@@ -35,11 +35,11 @@ public class MainActivity extends Activity {
         //items.add("Second Item");
         //items.add("Third Item");
         // Setup remove listener method call
-        setupListViewListener();
+        setupListViewLongClkListener();
     }
 
     // Attaches a long click listener to the listview
-    private void setupListViewListener() {
+    private void setupListViewLongClkListener() {
         lvItems.setOnItemLongClickListener(
                 new AdapterView.OnItemLongClickListener() {
                     @Override
@@ -57,17 +57,6 @@ public class MainActivity extends Activity {
                 });
     }
 
-    // Attaches a long click listener to the listview
-    ////private void setupEditItemListener() {
-        //  EditItemActivity.java     ActivityOne.java
-        ////public void launchEditItem() {
-            // first parameter is the context, second is the class of the activity to launch
-            ////Intent i = new Intent(MainActivity.this, EditItemActivity.class);
-            ////startActivity(i); // brings up the second activity
-       //// }
-
-
-    ////}
 
     public void onAddItem(View v) {
         EditText etNewItem = (EditText) findViewById(R.id.etNewItem);
