@@ -39,12 +39,14 @@ public class EditItemActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void printStarter(EditText view) {
+    public void editTodoItem(EditText view) {
         EditText myText = (EditText) findViewById(R.id.newTodoItem);
         myText.setText("Your new Todo item here");
 
         Button button = (Button)findViewById(R.id.btnSaveNewTodoItem);
-        button.setText("Click Me !");
+        button.setText("Savel");
+
+        //button.setOnClickListener(new OnClickListener();
 
     }
 
