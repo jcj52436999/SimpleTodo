@@ -8,7 +8,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 public class EditItemActivity extends AppCompatActivity {
 
@@ -41,19 +40,13 @@ public class EditItemActivity extends AppCompatActivity {
     }
 
     public void printStarter(EditText view) {
-        TextView myText = (TextView) findViewById(R.id.btnAddItem);
-        myText.setText("Your Text here");
+        EditText myText = (EditText) findViewById(R.id.newTodoItem);
+        myText.setText("Your new Todo item here");
 
-        Button button = (Button)findViewById(R.id.btnAddItem);
+        Button button = (Button)findViewById(R.id.btnSaveNewTodoItem);
         button.setText("Click Me !");
 
-
-
     }
-
-
-
-
 
 
 }

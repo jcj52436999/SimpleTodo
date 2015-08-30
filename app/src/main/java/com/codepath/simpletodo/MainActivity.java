@@ -36,6 +36,7 @@ public class MainActivity extends Activity {
         //items.add("Third Item");
         // Setup remove listener method call
         setupListViewLongClkListener();
+        //btnSaveNewTodoItem.setOnClickListener(new OnClickListener());
     }
 
     // Attaches a long click listener to the listview
@@ -56,6 +57,30 @@ public class MainActivity extends Activity {
 
                 });
     }
+
+
+/*
+    // Attaches a reguar click listener to the listview
+    private void setupListViewRegClkListener() {
+        lvItems.setOnItemClickListener(
+                new AdapterView.OnItemClickListener() {
+                    @Override
+                    public boolean onItemClick(AdapterView<?> adapter,
+                                            View item, int pos, long id) {
+                        // Remove the item within array at position
+                        items.remove(pos);
+                        // Refresh the adapter
+                        itemsAdapter.notifyDataSetChanged();
+                        writeItems();
+                        // Return true consumes the long click event (marks it handled)
+                        return true;
+                    }
+
+                });
+    }
+*/
+
+
 
 
     public void onAddItem(View v) {
