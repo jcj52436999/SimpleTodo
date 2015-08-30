@@ -7,6 +7,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import org.apache.commons.io.FileUtils;
 
@@ -46,6 +47,8 @@ public class MainActivity extends Activity {
                     @Override
                     public boolean onItemLongClick(AdapterView<?> adapter,
                                                    View item, int pos, long id) {
+                        Toast.makeText(MainActivity.this, "Main Activity DOUBLE click listener.", Toast.LENGTH_LONG).show();
+
                         // Remove the item within array at position
                         items.remove(pos);
                         // Refresh the adapter
@@ -54,6 +57,7 @@ public class MainActivity extends Activity {
                         // Return true consumes the long click event (marks it handled)
                         return true;
                     }
+
 
                 });
     }
@@ -68,7 +72,7 @@ public class MainActivity extends Activity {
                     public void onItemClick(AdapterView<?> adapter,
                                             View item, int pos, long id) {
 
-                        //Toast.makeText(onItemClick();, "Made it here.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Main Activity SINGLE click listener.", Toast.LENGTH_LONG).show();
 
 
 
