@@ -75,10 +75,6 @@ public class MainActivity extends Activity {
                         Toast.makeText(MainActivity.this, "Main Activity SINGLE click listener.", Toast.LENGTH_LONG).show();
 
 
-
-
-
-
                         // Return true consumes the long click event (marks it handled)
                         return;
                     }
