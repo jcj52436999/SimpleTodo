@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/etNewItem"
         android:layout_alignTop="@+id/btnAddItem"
-        android:hint="Enter a new item - ag"
+        android:hint="Enter a new item - ah"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/btnAddItem"

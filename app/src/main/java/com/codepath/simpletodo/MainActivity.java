@@ -21,6 +21,9 @@ public class MainActivity extends Activity {
     private ArrayAdapter<String> itemsAdapter;
     private ListView lvItems;
 
+    private EditItemActivity editAnItem;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,7 @@ public class MainActivity extends Activity {
         //items.add("Third Item");
         // Setup remove listener method call
         setupListViewLongClkListener();
+        setupListViewRegClkListener();
         //btnSaveNewTodoItem.setOnClickListener(new OnClickListener());
     }
 
@@ -47,7 +51,7 @@ public class MainActivity extends Activity {
                     @Override
                     public boolean onItemLongClick(AdapterView<?> adapter,
                                                    View item, int pos, long id) {
-                        Toast.makeText(MainActivity.this, "Main Activity DOUBLE click listener.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, "Main Activity LONG click listener.", Toast.LENGTH_LONG).show();
 
                         // Remove the item within array at position
                         items.remove(pos);
@@ -74,9 +78,10 @@ public class MainActivity extends Activity {
 
                         Toast.makeText(MainActivity.this, "Main Activity SINGLE click listener.", Toast.LENGTH_LONG).show();
 
+                        //editAnItem.editTodoItem();
 
                         // Return true consumes the long click event (marks it handled)
-                        return;
+                        // return;
                     }
 
                 });
